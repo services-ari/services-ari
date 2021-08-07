@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+div#cardLives {
+     background: transparent;
+}.proxi{
+width: 500px;
+    padding-left: 30px;
+    }
+    .proxi {
+    height: 120px;
+    width: 500px;
+    padding-left: 30px;
+}
+        .dioses {
+    float: right;
+    padding-right: 17px;
+}
+</style>
+<body>
+
+</body>
+</html>
+
+            
+                  <table class="table">
+ 
+  
+</table>
+</div>
+              </div>
+            </div>
+</div>
+
+<section class="proxi">
+              <div class="card">
+                <section class="card-header card-header-success">
+                  <h4 class="card-title">PROXI <strong id="proxi">0</strong></h4>
+                </section>
+                  <p class="card-category"></p>
+                <div class="card-body" id="cardproxi">
+                <div class="card-body">
+                    <div class="col-md-7">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label style="color:black;">proxi</label>
+                          <div class="form-group bmd-form-group">
+                            <!-- <label class="bmd-label-floating"> Ingres tus proxis primium</label> -->
+                            <textarea class="form-control" rows="5" id="tx_ccs" placeholder="Ingres tus proxis primium"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+</section>
+<div class="content" id="cargando">
+<div class="container-fluid">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="card" style="background-color: rgba(255, 255, 255, 0.5);">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">OLYMPUS CHEKER</h4>
+                  <p class="card-category">Seleccione el gate preferido para empezar...</p>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label style="color:black;">INGRESE LAS CC</label>
+                          <div class="form-group bmd-form-group">
+                            <!-- <label class="bmd-label-floating"> 5180302002577220|10|2022|271</label> -->
+                            <textarea class="form-control" rows="10" id="tx_ccs" placeholder="5180302002577220|10|2022|271"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button id="btn_procesando" type="button" class="buttonload btn btn-primary pull-right">
+                    <i class="fa fa-spinner fa-spin"></i>Procesando
+                  </button>
+
+                    <button id="btn_enviar" type="button" onclick="enviatTest()" class="btn btn-primary pull-right">ENVIAR</button>
+                    <button type="button" onclick="detener()" class="btn btn-danger pull-right">CANCELAR</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+<!-- separacion -->
+<div class="col-md-7">
+  <div class="card card-status"  style=".0">
+    <div class="card-body">
+      <!-- <h4 class="card-title">Alec Thompson</h4> -->
+      <table class="table">
+<thead>
+<tr>
+<th scope="col"  style="color:black; font-weight:bold;">Status</th>
+<th scope="col"  style="color:black; font-weight:bold;">Card</th>
+<th scope="col"  style="color:black; font-weight:bold;">Expiration</th>
+<th scope="col"  style="color:black; font-weight:bold;">CVV</th>
+<th scope="col"  style="color:black; font-weight:bold;">PROXI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" style="color:black; font-weight:bold;"></th>
+<td style="color:black; font-weight:bold;"></td>
+<td style="color:black; font-weight:bold;"></td>
+<td style="color:black; font-weight:bold;"></td>
+</tr>
+<tr>
+<th scope="row" style="color:black; font-weight:bold;"></th>
+<td style="color:black; font-weight:bold;"></td>
+<td style="color:black; font-weight:bold;"></td>
+<td style="color:black; font-weight:bold;"></td>
+</tr>
+
+</tbody>
+</table>
+      <!-- <a href="#pablo" class="btn btn-primary btn-round">Follow</a> -->
+    </div>
+  </div>
+</div>
+        <div class="row">
+          <div id="idProcesando" class="col-md-1">
+              <div class="card">
+                <div class="card-header card-header-info">
+                  <h4 class="card-title">PROCESANDO <strong id="procesando">0</strong></h4>
+                  <p class="card-category">EN PROCESO...</p>
+                </div>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+              <div class="col-md-7">
+              <div class="card">
+                <div class="card-header card-header-danger">
+                  <h4 class="card-title">LIVES <strong id="deads">0</strong></h4>
+                  <p class="card-category"></p>
+                </div>
+                <div class="lives-body" id="cardDeads">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title">DEADS <strong id="deads">0</strong></h4>
+                  <p class="card-category"></p>
+                </div>
+                <div class="deads-body" id="cardDeads">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+</div>
+</div>
+
+<?php
+require 'footer.php';
+?>
+
+<script src="scripts/ccv1.js"></script>
